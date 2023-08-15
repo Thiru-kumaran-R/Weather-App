@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./images/cloudy.png">
+    <link rel="stylesheet" href="./style.css">
+    <title>Weather API</title>
+</head>
+<body>
+    <section class="container">
+        <div class="search">
+            <input type="text" autofocus spellcheck="true">
+            <img src="./images/loupe.png" alt="" height="40px" id="search-btn">
+        </div>
+
+        <div class="details">
+            <div class="day">
+                <h1>Monday</h1>
+            </div>
+            <div class="date">
+                <h2>
+                    31 July 2023
+                </h2>
+            </div>
+            <div class="place">
+                <h2>Chennai</h2>
+            </div>
+        </div>
+
+        <div class="temperature-description">
+            
+            <div class="temperature">
+                <h1>32C</h1>
+            </div>
+
+            <div class="description">
+                <div class="humidity">
+                    <span>46%</span>
+                    <p>humidity</p>
+                </div>
+                <div class="wind">
+                     <span>46%</span>
+                    <p>wind</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="weather-details">
+        <div class="content">
+            <div class="weather-details-section">
+                <div class="precipitate"><h3>Pressure</h3> <span>value</span></div>
+                <div class="air-quality"><h3>Air Quality</h3> <span>value</span></div>
+                <div class="road-status"><h3>Description</h3> <span>value</span></div>
+            </div>
+
+            <div class="daily-weather">
+                <div class="box tommorow">
+                    <h2>Mon</h2>
+                    <img src="" alt="" height="70px">
+                    <h3>32c</h3>
+                </div>
+                <div class="box oneDayAfter">
+                    <h2>Tue</h2>
+                    <img src="" alt="" height="70px">
+                    <h3>32c</h3>
+                </div>
+                <div class="box twoDayAfter">
+                    <h2>Wed</h2>
+                    <img src="" alt="" height="70px">
+                    <h3>32c</h3>
+                </div>
+            </div>
+
+            <div class="btn">
+                <button type="button" > Change Location </button>
+            </div>
+        </div>
+    </section>
+
+    <script type='text/javascript' src='./config.js' defer></script>
+    <script src="./index.js" defer></script>
+</body>
+</html>
