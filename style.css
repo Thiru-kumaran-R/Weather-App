@@ -172,7 +172,6 @@ body{
     justify-content: center;
     flex-direction: column;
     background-color: #333;
-    overflow: auto;
     border-top-right-radius: 1vh;
     border-bottom-right-radius: 1vh;
     z-index: 99999;
@@ -187,7 +186,6 @@ body{
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
-    overflow: scroll;
     z-index: 99999;
     scale: 0;
     opacity: 0;
@@ -234,7 +232,6 @@ body{
     flex-direction: row;
     width: 380px;
     height: 210px;
-    /* overflow: scroll; */
     border-radius: 2vh;
     background-color: #333;
     transition: width 0.4s;
