@@ -172,6 +172,7 @@ body{
     justify-content: center;
     flex-direction: column;
     background-color: #333;
+    overflow: hidden ;
     border-top-right-radius: 1vh;
     border-bottom-right-radius: 1vh;
     z-index: 99999;
@@ -186,8 +187,8 @@ body{
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
+    overflow: hidden ;
     z-index: 99999;
-    transition-delay: 1.2s;
     scale: 0;
     opacity: 0;
 }
