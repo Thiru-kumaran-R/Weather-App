@@ -11,7 +11,7 @@ body{
     align-items: center;
     height: 100vh;
     overflow-x: hidden;
-    background-color: #146C94;
+    background-color: #35155D;
 }
 
 /* height : 500px */
@@ -43,6 +43,14 @@ body{
     background-position: right;
 }
 
+.container::after{
+    content: '';
+    position: absolute;
+    inset: 0px;
+    background : linear-gradient(45deg,#512B81, #BEADFA);
+    border-radius: 2vh;
+    opacity: 0.5;
+}
 
 .search{
     position: absolute;
@@ -279,7 +287,7 @@ body{
     border-radius: 8vh;
     border: none;
     font-size: 25px;
-    background: linear-gradient(45deg,#19A7CE, #99DBF5, #19A7CE);
+    background : linear-gradient(215deg,#512B81, #BEADFA);
     color: #fff;
     z-index: 99999;
 }
