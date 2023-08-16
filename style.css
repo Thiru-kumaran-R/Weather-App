@@ -187,6 +187,7 @@ body{
     justify-content: space-between;
     flex-direction: column;
     z-index: 99999;
+    transition-delay: 1.2s;
     scale: 0;
     opacity: 0;
 }
