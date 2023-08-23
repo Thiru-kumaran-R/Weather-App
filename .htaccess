@@ -1,4 +1,0 @@
-RewriteEngine On
-RewriteCond %{HTTP_HOST} thirukumaran05\.github\.io [NC]
-RewriteCond %{SERVER_PORT} 80
-RewriteRule ^(.*)$ https://thirukumaran05.github.io/$1 [R,L]
