@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,6 +12,10 @@
     <title>Weather API</title>
 </head>
 <body>
+    <div id="preloader">
+        <div class="circle"></div>
+    </div>
+
     <section class="container">
         <div class="search">
             <input type="text" autofocus spellcheck="true">
@@ -19,31 +24,31 @@
 
         <div class="details">
             <div class="day">
-                <h1>Monday</h1>
+                <h1></h1>
             </div>
             <div class="date">
                 <h2>
-                    31 July 2023
+                 
                 </h2>
             </div>
             <div class="place">
-                <h2>Chennai</h2>
+                <h2></h2>
             </div>
         </div>
 
         <div class="temperature-description">
             
             <div class="temperature">
-                <h1>32C</h1>
+                <h1></h1>
             </div>
 
             <div class="description">
                 <div class="humidity">
-                    <span>46%</span>
+                    <span></span>
                     <p>humidity</p>
                 </div>
                 <div class="wind">
-                     <span>46%</span>
+                     <span></span>
                     <p>wind</p>
                 </div>
             </div>
@@ -85,5 +90,11 @@
 
     <script type='text/javascript' src='./config.js' defer></script>
     <script src="./index.js" defer></script>
+    <script>
+        let load = document.getElementById("preloader");
+        window.addEventListener("load", () => {
+            load.style.display = "none";
+        })
+    </script>
 </body>
 </html>

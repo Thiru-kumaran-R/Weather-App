@@ -52,6 +52,14 @@ body{
     opacity: 0.5;
 }
 
+.container::after{
+    content: '';
+    position: absolute;
+    inset: 0px;
+    background : linear-gradient(45deg,#512B81, #BEADFA);
+    border-radius: 2vh;
+    opacity: 0.5;
+}
 
 .search{
     position: absolute;
@@ -243,7 +251,6 @@ body{
     flex-direction: row;
     width: 380px;
     height: 210px;
-    /* overflow: scroll; */
     border-radius: 2vh;
     background-color: #333;
     transition: width 0.4s;
@@ -302,4 +309,44 @@ body{
 .non-scale{
     scale: 1;
     opacity: 1;
+}
+
+#preloader{
+    height: 100vh;
+    width: 100%;
+    z-index: 9999;
+    background-color: #35155D;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #BEADFA;
+    position: relative;
+    z-index: 2;
+    opacity: 0.6;
+    animation: size 4s linear infinite;
+}
+
+@keyframes size {
+    0%{
+        scale: 0.5;
+    }
+    25%{
+        scale: 1;
+    }
+    50%{
+        scale: 1.2;
+    }
+    75%{
+        scale: 1;
+    }
+    100%{
+        scale: 0.5;
+    }
 }
