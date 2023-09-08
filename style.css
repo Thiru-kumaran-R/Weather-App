@@ -11,7 +11,7 @@ body{
     align-items: center;
     height: 100vh;
     overflow-x: hidden;
-    background-color: #146C94;
+    background-color: #35155D;
 }
 
 /* height : 500px */
@@ -43,6 +43,15 @@ body{
     background-position: right;
 }
 
+.container::after{
+    content: '';
+    position: absolute;
+    inset: 0px;
+    background : linear-gradient(45deg,#512B81, #BEADFA);
+    border-radius: 2vh;
+    opacity: 0.5;
+}
+
 
 .search{
     position: absolute;
@@ -57,7 +66,7 @@ body{
     background-color: #fff;
     text-transform: capitalize;
     padding-right: 10px;
-    z-index: 2;
+    z-index: 25;
     transition: 0.3s;
     transition-timing-function: linear;
     scale: 1;
@@ -80,7 +89,7 @@ body{
     height: fit-content;
     text-align: left;
     padding: 20px;
-    z-index: 3;
+    z-index: 25;
     scale: 0;
     opacity: 0;
     transition-delay: 0.2s;  
@@ -100,7 +109,7 @@ body{
    flex-direction: column;
    align-items: center;
    width: 100%;
-   z-index: 3;
+   z-index: 25;
    bottom: 0px;
    right: 0px;
    transition-delay: 0.2s;
@@ -172,7 +181,7 @@ body{
     justify-content: center;
     flex-direction: column;
     background-color: #333;
-    overflow: auto;
+    overflow: hidden ;
     border-top-right-radius: 1vh;
     border-bottom-right-radius: 1vh;
     z-index: 99999;
@@ -187,7 +196,7 @@ body{
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
-    overflow: scroll;
+    overflow: hidden ;
     z-index: 99999;
     scale: 0;
     opacity: 0;
@@ -280,7 +289,7 @@ body{
     border-radius: 8vh;
     border: none;
     font-size: 25px;
-    background: linear-gradient(45deg,#19A7CE, #99DBF5, #19A7CE);
+    background : linear-gradient(215deg,#512B81, #BEADFA, #512B81);
     color: #fff;
     z-index: 99999;
 }

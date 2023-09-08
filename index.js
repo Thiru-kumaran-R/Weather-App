@@ -41,7 +41,7 @@ searchBtn.addEventListener("click", ()=>{
 
     var userValue = searchInput.value;
 
-    fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${userValue}&limit=5&appid=${API_KEY}`)
+    fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${userValue}&limit=5&appid=${API_KEY}`)
     .then( response => response.json())
     .then(data => {
         var lat = data[0].lat;
@@ -73,7 +73,7 @@ searchBtn.addEventListener("click", ()=>{
             document.querySelector(".weather-details").style.width = "400px";
             contents.classList.add("non-scale");
 
-            fetch(`http://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${long}&appid=${API_KEY}`)
+            fetch(`https://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${long}&appid=${API_KEY}`)
             .then(result => result.json())
             .then(data =>{
                 var airQualityAqi= data.list[0].main.aqi;
@@ -91,7 +91,7 @@ searchBtn.addEventListener("click", ()=>{
                 }
              
 
-                fetch(`http://api.openweathermap.org/data/2.5/forecast/daily?lat=${lat}&lon=${long}&cnt=4&units=metric&appid=${API_KEY}`)
+                fetch(`https://api.openweathermap.org/data/2.5/forecast/daily?lat=${lat}&lon=${long}&cnt=4&units=metric&appid=${API_KEY}`)
                 .then(response => response.json())
                 .then(data =>{
                     var tommorow = new Date(data.list[1].dt * 1000);
@@ -100,7 +100,7 @@ searchBtn.addEventListener("click", ()=>{
                     var iconcodeTom = data.list[1].weather[0].icon;
                     day1.innerHTML = `<h2> ${tommorowDay} </h2> `;
                     day1Deg.innerHTML = `<h3> ${Math.round(tommorowTemp)}°c </h3>`;
-                    var iconurlTom = "http://openweathermap.org/img/w/" + iconcodeTom + ".png";
+                    var iconurlTom = "https://openweathermap.org/img/w/" + iconcodeTom + ".png";
                     day1Img.src = iconurlTom;
 
                     var dayAfterTommorow = new Date(data.list[2].dt * 1000);
@@ -109,7 +109,7 @@ searchBtn.addEventListener("click", ()=>{
                     var iconcodeDayAfter = data.list[2].weather[0].icon;
                     day2.innerHTML = `<h2> ${datAfterTommorowDay} </h2> `;
                     day2Deg.innerHTML = `<h3> ${Math.round(dayAfterTemp)}°c </h3>`;
-                    var iconurlDayAfter = "http://openweathermap.org/img/w/" + iconcodeDayAfter + ".png";
+                    var iconurlDayAfter = "https://openweathermap.org/img/w/" + iconcodeDayAfter + ".png";
                     day2Img.src = iconurlDayAfter;
 
                     var twoDaysAfter = new Date(data.list[3].dt * 1000);
@@ -118,7 +118,7 @@ searchBtn.addEventListener("click", ()=>{
                     var iconcodeTwoDayAfter = data.list[3].weather[0].icon;
                     day3.innerHTML = `<h2> ${twoDaysAfterDay} </h2> `;
                     day3Deg.innerHTML = `<h3> ${Math.round(twodayAfterTemp)}°c </h3>`;
-                    var iconurlTwoDayAfter = "http://openweathermap.org/img/w/" + iconcodeTwoDayAfter + ".png";
+                    var iconurlTwoDayAfter = "https://openweathermap.org/img/w/" + iconcodeTwoDayAfter + ".png";
                     day3Img.src = iconurlTwoDayAfter;
                 })
             })
