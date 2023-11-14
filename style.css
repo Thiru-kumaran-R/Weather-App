@@ -11,7 +11,7 @@ body{
     align-items: center;
     height: 100vh;
     overflow-x: hidden;
-    background-color: #35155D;
+    background-color: #01A9B4;
 }
 
 /* height : 500px */
@@ -47,19 +47,11 @@ body{
     content: '';
     position: absolute;
     inset: 0px;
-    background : linear-gradient(45deg,#512B81, #BEADFA);
+    background : linear-gradient(45deg,#53CDE2, #A1EAFB);
     border-radius: 2vh;
-    opacity: 0.5;
+    opacity: 0.4;
 }
 
-.container::after{
-    content: '';
-    position: absolute;
-    inset: 0px;
-    background : linear-gradient(45deg,#512B81, #BEADFA);
-    border-radius: 2vh;
-    opacity: 0.5;
-}
 
 .search{
     position: absolute;
@@ -296,9 +288,10 @@ body{
     border-radius: 8vh;
     border: none;
     font-size: 25px;
-    background : linear-gradient(215deg,#512B81, #BEADFA, #512B81);
+    background : linear-gradient(45deg,#53CDE2, #A1EAFB);
     color: #fff;
     z-index: 99999;
+    cursor: pointer;
 }
 
 .scale{
@@ -315,7 +308,7 @@ body{
     height: 100vh;
     width: 100%;
     z-index: 9999;
-    background-color: #35155D;
+    background-color: #01A9B4;
     position: fixed;
     display: flex;
     justify-content: center;
@@ -326,7 +319,7 @@ body{
     height: 50px;
     width: 50px;
     border-radius: 50%;
-    background-color: #BEADFA;
+    background-color: #D1F4FA;
     position: relative;
     z-index: 2;
     opacity: 0.6;
