@@ -7,5 +7,5 @@ This Weather app includes a number of components that provide information about 
 ## Demo
 
 Try this project in the following url :
- https://thirukumaran05.github.io/Weather-App/
+[ https://thirukumaran05.github.io/Weather-App/](https://thiru-kumaran-r.github.io/Weather-App/)
 
